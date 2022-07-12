@@ -104,7 +104,7 @@ This is the main source file that interacts with all other classes in this appli
 It then analyzes and implements the user's selections by calling relevant methods from other external classes. Each of these methods 
 are used to create and launch user-specific queries to interact with the database.
 
-__2. CaptureProjects.java:__
+__3. CaptureProjects.java:__
 
 The CaptureProjects class is used to capture and write details about new projects and people to the PoisePMS database.
 It contains the following 6 static methods:
@@ -141,6 +141,93 @@ It contains the following 6 static methods:
 				  
 	Once a new project and relevant particulars involved in project is successfully captured and added to the database, an 
 	updated list of existing projects and people will be displayed from the database.
+	
+__4. ProjectUpdates.java:__
+
+The ProjectUpdates class allow users to execute update queries to amend particular details of existing projects or people. 
+It encompasses 3 static methods - each used to update select information about existing projects:
+
+	-  updateDueDate() method: 
+	   This method allows users to amend the deadline of existing and incomplete projects. If a project's completion 
+	   status equals to "Finalized", no updates will be made to the requested project's due date as the project has 
+	   been finalized. An updated list of projects will be displayed to the user, reflecting the updated due date. 
+	   
+        - updatePaidFee() method: 
+	  This method enables users to update the paid amount to date of existing and incomplete projects if a client has 
+	  made payment. As with the updateDueDate() method, the query will only be successful if the project completion status 
+	  equals to "No." The paid project fee will not be updated for finalized projects. An updated list of projects will be 
+	  displayed to the user, reflecting the updated paid fee of the project. An invoice will also be shown, reflecting the 
+	  total amount paid and the owed balance owed by the client. 
+				  
+	- updateContractorDetails() method: 
+	  This method allows a user to amend the contact details (contact number and email address) of contractors involved in
+	  existing and incomplete projects. Once the relevant contact details of the contractor has been succesfully updated
+	  and written to the database, an updated list of all contractors will be printed, reflecting the updated contact information.
+	  
+__5. PrintAll.java:__
+
+The PrintAll class contains code to display all details about projects and people (e.g. customers, project managers, contractors) 
+involved in projects. This class contains the following static methods:
+
+	-  displayAllProjects() method: 
+	   This method runs a SELECT statement on the Project table to return all results of existing projects and relevant project
+	   details from the database.
+				
+	-  displayAllEngineers() method: 
+	   This method runs a SELECT statement on the Structural_Engineer table to return all results of existing structural engineers
+	   from the database.
+				
+	-  displayAllManagers() method: 
+	   This method runs a SELECT statement on the Project_Manager table to return all results of existing project managers
+	   from the database.
+				   
+	-  displayAllArchitects() method: 
+	   This method runs a SELECT statement on the Architect table to return all results and information of all existing
+	   architects from the database.
+				
+	-  displayAllCustomers() method: 
+	   This method runs a SELECT statement on the Customer table to return all results of existing customers from the database.
+				
+	-  displayAllContractors() method: 
+	   This method runs a SELECT statement on the Contractor table to return all results and information of existing contractors
+	   from the database.
+
+__6. ReadProjects.java:__
+
+This code calls relevant static methods from the PrintAll class to display and read information about existing projects and 
+people involved in projects
+It contains the following 2 static methods: 
+			   
+	- readProjects(): 
+	  This method calls the displayAllProjects() method from the PrintAll class to return information about projects on 
+	  the PoisePMS database.
+			
+	- readPeople(): 
+	  This method calls the displayAllEngineers(), displayAllManagers(), displayAllArchitects(), displayAllCustomers() 
+	  and displayAllContractors() methods to print these details in succession.
+			   
+The ReadProjects.readProjects() and ReadProjects.readPeople() methods are called at the start of the program to display 
+existing projects and people contained in the database.
+
+__7. ViewProjects.java:__
+
+This class enables users to view projects based on completion status or unique project IDs.
+It comprises the following 4 static methods:
+				
+	- viewAProject(): This method enables users to view a specific project by entering its unique project ID. 
+				
+	- viewCompletedProjects(): This method enables users to view all complete projects from the database - 
+	                           that is projects with a completion status equalled to "Finalized".
+				
+	- viewIncompleteProjects(): This method enables users to view all incomplete projects from the database - 
+	                            that is projects with a completion status equalled to "No".
+				
+	- viewOverdueProjects(): This method allow users to view all overdue projects from the database. Overdue projects 
+	                         qualify as projects with a completion status equalled to "No" and  a deadline smaller than
+				 the current date.
+
+
+
 
 			
 			
