@@ -81,7 +81,7 @@ __-ProjectUpdates.java__
 __-ReadProjects.java__
 	- java.sql Package 
 			
-__-ViewProjects.java___
+__-ViewProjects.java__
 	- java.sql Package 
 	- java.text.SimpleDateFormat Package
 
@@ -92,7 +92,7 @@ readability of the code and separating code blocks into select methods in releva
 			
 The system contains the following files:
 
-__1. Connection.java:
+__1. Connection.java:__
 
 The Connection class is used to establish a connection to the target database. 
 It consists of two getMethods: the getConnection() method is used to connect to a Java database and
