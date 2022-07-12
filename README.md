@@ -58,13 +58,13 @@ You are also required to download the MySQL Community Server in order to create 
 
 The following built-in Java packages are imported to the below .java files:
 
-___-CaptureProjects.java___ 
+__-CaptureProjects.java__
 	- java.sql Package 
 			
-__-Connection.java___ 
+__-Connection.java__
 	- java.sql Package 
 			
-__-FinalizeProjects.java___
+__-FinalizeProjects.java__
 	- java.sql Package 
 	- java.text.SimpleDateFormat Package
 			
@@ -72,13 +72,13 @@ __-PoisedPMS.java___
 	- java.sql Package 
 	- java.util Package
 			
-___-PrintAll.java___
+__-PrintAll.java__
 	- java.sql Package 
 			
-___-ProjectUpdates.java__
+__-ProjectUpdates.java__
 	- java.sql Package 
 			
-___-ReadProjects.java___
+__-ReadProjects.java__
 	- java.sql Package 
 			
 __-ViewProjects.java___
@@ -92,7 +92,7 @@ readability of the code and separating code blocks into select methods in releva
 			
 The system contains the following files:
 
-__1. Connection.java:___
+__1. Connection.java:
 
 The Connection class is used to establish a connection to the target database. 
 It consists of two getMethods: the getConnection() method is used to connect to a Java database and
