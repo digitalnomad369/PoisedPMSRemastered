@@ -4,7 +4,7 @@
 
 [System Objectives and Description](#System-Objectives-and-Description)
 
-[System Requirements and Installation](#System Requirements-and-Installation)
+[System Requirements and Installation](#System-Requirements-and-Installation)
 
 [Java Packages](#Java-Packages)
 
@@ -44,7 +44,7 @@ In order to run and test this code, and interact with the database, the followin
 __- The Java Development Kit v17 or higher:__
 To download the JDK, click on the following link: *https://www.oracle.com/java/technologies/downloads/* 
 
-_- Eclipse IDE:__
+__- Eclipse IDE:__
     - To download Eclipse, click on the following: *https://www.eclipse.org/downloads/*
 
 				  
