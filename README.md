@@ -241,11 +241,16 @@ still payable. It consists of the following 2 static methods:
   
 # Sample output
 
-![output1_projectmanager](https://user-images.githubusercontent.com/102178512/178512387-2fa2d7ef-b05c-4d62-bf28-7a29fdefc5a0.jpg)
+![output1_poisedpms](https://user-images.githubusercontent.com/102178512/178512964-d57efb05-f9ab-4565-ba18-3650a76f2352.jpg)
+
 ![output_2_poisedpms](https://user-images.githubusercontent.com/102178512/178512526-5238f209-e783-4036-b731-ad5d63afbab3.jpg)
+
 ![output3_poisedpms](https://user-images.githubusercontent.com/102178512/178512598-7cf9308c-5dd8-4ec9-a3e0-56f858f24112.jpg)
+
 ![output4_poisedpms](https://user-images.githubusercontent.com/102178512/178512645-e3260bb1-e627-4ec7-b208-ef9cb742993b.jpg)
+
 ![output5_poisedpms](https://user-images.githubusercontent.com/102178512/178512675-0a13d988-1adc-401d-b550-b5f1c8644261.jpg)
+
 ![output6_poisedpms](https://user-images.githubusercontent.com/102178512/178512719-9c1aba82-242f-49f3-85ae-c713bfc43ad4.jpg)
 
 # Contributors
