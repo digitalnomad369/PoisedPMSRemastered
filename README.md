@@ -14,7 +14,7 @@
 
 [Contributors](#Contributors)
 
-[License and Copyright](#License and Copyright)
+[License and Copyright](#License-and-Copyright)
 
 # System Objectives and Description
 		
@@ -46,5 +46,61 @@ To download the JDK, click on the following link: *https://www.oracle.com/java/t
 
 __- Eclipse IDE:__
     - To download Eclipse, click on the following: *https://www.eclipse.org/downloads/*
+    
+Alternatively, you can download the IntelliJ IDEA which also supports compatibility for Java code
+
+    - To download the IntelliJ IDEA click on the following link: *https://www.jetbrains.com/idea/download/*
+
+You are also required to download the MySQL Community Server in order to create and access databases and to download the Connector/J JDBC driver
+- To download MySQL access the following link: *https://dev.mysql.com/downloads/mysql/*
+
+# Java Packages
+
+The following built-in Java packages are imported to the below .java files:
+
+___-CaptureProjects.java___ 
+	- java.sql Package 
+			
+__-Connection.java___ 
+	- java.sql Package 
+			
+__-FinalizeProjects.java___
+	- java.sql Package 
+	- java.text.SimpleDateFormat Package
+			
+__-PoisedPMS.java___
+	- java.sql Package 
+	- java.util Package
+			
+___-PrintAll.java___
+	- java.sql Package 
+			
+___-ProjectUpdates.java__
+	- java.sql Package 
+			
+___-ReadProjects.java___
+	- java.sql Package 
+			
+__-ViewProjects.java___
+	- java.sql Package 
+	- java.text.SimpleDateFormat Package
+
+#  Application Components
+
+This application is comprised of 8 .java source files with the objective of improving the general 
+readability of the code and separating code blocks into select methods in relevant classes. 
+			
+The system contains the following files:
+
+__1. Connection.java:___
+
+The Connection class is used to establish a connection to the target database. 
+It consists of two getMethods: the getConnection() method is used to connect to a Java database and
+the getStatement() method used to access a sql statement. Both methods are accessible to other methods outside the target class. 
+			
+				
+
+
+
 
 				  
