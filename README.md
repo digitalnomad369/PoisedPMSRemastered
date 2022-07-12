@@ -97,6 +97,52 @@ __1. Connection.java:__
 The Connection class is used to establish a connection to the target database. 
 It consists of two getMethods: the getConnection() method is used to connect to a Java database and
 the getStatement() method used to access a sql statement. Both methods are accessible to other methods outside the target class. 
+
+__2. PoisePMS.java:__
+
+This is the main source file that interacts with all other classes in this application based on the user's input and selected options. 
+It then analyzes and implements the user's selections by calling relevant methods from other external classes. Each of these methods 
+are used to create and launch user-specific queries to interact with the database.
+
+__2. CaptureProjects.java:__
+
+The CaptureProjects class is used to capture and write details about new projects and people to the PoisePMS database.
+It contains the following 6 static methods:
+
+	- captureProject() method:
+	  This method enables users to enter and capture information 
+	  relevant to new projects, such as the project fee, project name and unique project ID 
+	  and writes these details to the Project table in the PoisePMS database. 
+				  
+	  The Project table in the database also contains unique IDs for each individual involved in a particular
+	  project which links the individual to its respective table in the database. 
+				
+	- captureEngineer() method: 
+	  This method enables users to capture all personal details, such as the name, contact details and physical address 
+	  of the structural engineer involved in the new project and writes these captured details to the Structural_Engineer 
+	  table of the PoisePMS database.
+				  
+	- captureManager() method: 
+	  This method enables users to capture all personal details, such as the name, contact details 
+	  and physical address of the project manager involved in the new project and writes these captured details to the 
+	  Project_Manager table of the PoisePMS database.
+				
+	- captureCustomer() method: 
+          This method enables users to capture all personal details, such as the name, contact details and physical address of 
+	  the client involved in the new project and writes these captured details to the Customer table of the PoisePMS database.
+				
+	- captureArchitect() method: 
+	  This method enables users to capture all personal details, such as the name, contact details and physical address of the 
+	  architect involved in the new project and writes these captured details to the Architect table of the PoisePMS database.
+				
+	- captureContractor() method: 
+	  This method enables users to capture all personal details, such as the name, contact details and physical address of the 
+	  contractor involved in the new project and writes these captured details to the Contractor table of the PoisePMS database.
+				  
+	Once a new project and relevant particulars involved in project is successfully captured and added to the database, an 
+	updated list of existing projects and people will be displayed from the database.
+
+			
 			
 				
 
