@@ -2,9 +2,9 @@
 
 # TABLE OF CONTENTS # 
 
-[System Objectives and Description](#System Objectives and Description)
+[System Objectives and Description](#System-Objectives-and-Description)
 
-[System Requirements and Installation](# System Requirements-and-Installation)
+[System Requirements and Installation](#System Requirements-and-Installation)
 
 [Java Packages](#Java-Packages)
 
