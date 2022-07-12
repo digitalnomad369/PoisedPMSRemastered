@@ -226,6 +226,35 @@ It comprises the following 4 static methods:
 	                         qualify as projects with a completion status equalled to "No" and  a deadline smaller than
 				 the current date.
 
+__8. FinalizeProjects.java:__
+
+This code enables users to finalize projects or displays an invoice to the customer if there is an outstanding project fee 
+still payable. It consists of the following 2 static methods:
+			   
+	- finalizeProj(): This method executes a query to update an existing project's completion status to finalized on 3 
+	                  where conditions: 1. project ID must correspond with that which is entered by the user,
+			                    2. the project completion must be equal to "No", 
+					    3. and the project's fee must equal the paid project fee 
+			                      (I.e. there must be no outstanding fees owed on the project)
+			    
+	- viewInvoice(): This method displays invoice and customer details. If a user wishes to finalize a project and there 
+	                 is still outstanding fees payable, the viewInvoice() method is called and displays an invoice with 
+			 customer details. In this case, the project will not be finalized. 
+# Contributors
+
+Tammy-Lee Bastian, HyperionDev
+ 
+tammyleebastian@gmail.com
+
+# License and Copyright
+
+  © Tammy-Lee Bastian
+  
+  Licensed under the [MIT License](MIT_LICENSE_FILE)
+
+
+
+
 
 
 
